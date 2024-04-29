@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#week-offer">Offers of the week</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#welcome-summer">Welcome Summer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#day-offer">Offer of the day</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#last-minute">Last minute</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonial</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" onclick="removeCards()">Remove Cards</button>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <section class="jumbotron"></section>
+        <section id="week-offer" class="container my-5 ">
+            <div class="text-collapse">
+                <h3 class="text-center">Offers of the Week</h3>
+                <button type="button" class="btn btn-light align-self-center" data-bs-toggle="collapse"
+                    data-bs-target="#collapseWeekOffer" aria-expanded="true" aria-controls="collapseWeekOffer">
+                    Collapse
+                </button>
+            </div>
+            <div class="row collapse show" id="collapseWeekOffer">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5">
+                    <div class="card">
+                        <img style="height: 200px;"
+                            src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0f/bf/30/a9.jpg"
+                            class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Cairo</h5>
+                            <p class="card-text">The home to the ancient heart and soul of Egypt.</p>
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5">
+                    <div class="card">
+                        <img style="height: 200px;"
+                            src="https://s7g10.scene7.com/is/image/stena/20110623_kiel-hafen:16-9?ts=1688733511655&dpr=off"
+                            class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Kiel</h5>
+                            <p class="card-text">Museums and landmarks that focus on the city's maritime past.</p>
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5">
+                    <div class="card">
+                        <img style="height: 200px;"
+                            src="https://www.travelandleisure.com/thmb/QgVXkI5mQgL5eYz6VnTcznA7Tsk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-beach-bodrum-turkey-BODRUMTG1223-6b409a8cee43459a868dc5468913de51.jpg"
+                            class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Bodrum</h5>
+                            <p class="card-text">Lively nightlife but also a hub for history and culture enthusiasts.
+                            </p>
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5">
+                    <div class="card">
+                        <img style="height: 200px;"
+                            src="https://thinkingnomads.com/wp-content/uploads/2022/11/Sandals-Montego-Bay.jpg"
+                            class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Montego Bay</h5>
+                            <p class="card-text">Laid-back environment and spectacular surrounding landscapes.</p>
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="welcome-summer" class="container my-5">
+            <div class="text-collapse">
+                <h3 class="text-center">Welcome Summer</h3>
+                <button type="button" class="btn btn-light align-self-center" data-bs-toggle="collapse"
+                    data-bs-target="#collapseWelcomeSummer" aria-expanded="true" aria-controls="collapseWelcomeSummer">
+                    Collapse
+                </button>
+            </div>
+            <div class="row collapse show" id="collapseWelcomeSummer">
+                <div class="col-12 col-sm-6 col-md-4 col-xl-2 mb-5">
+                    <div class="card shadow-lg">
+                        <img src="https://a.cdn-hotels.com/gdcs/production143/d1112/c4fedab1-4041-4db5-9245-97439472cf2c.jpg"
+                            class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Bali<span class="badge badge-pill badge-danger">HOT</span></h5>
+                            <p class="card-text">Captivating natural beauty with several thousands of Temples</p>
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-xl-2 mb-5">
+                    <div class="card shadow-lg">
+                        <img src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3eca1c0e-2458-45d6-9502-982e2f924d97.jpg?crop=1320%2C880%2C440%2C0"
+                            class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Sardinia<span class="badge badge-pill badge-danger">HOT</span></h5>
+                            <p class="card-text">Mesmerising beaches, crystal clear sea, extraordinary nature and
+                                delicious foods.</p>
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-xl-2 mb-5">
+                    <div class="card shadow-lg">
+                        <img src="https://lp-cms-production.imgix.net/2021-06/shutterstockRF_662032261.jpg"
+                            class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Dubrovnik<span class="badge badge-pill badge-danger">HOT</span></h5>
+                            <p class="card-text">The city's Old Town is listed as a UNESCO World Heritage Site and full
+                                of historic landmarks</p>
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-xl-2 mb-5">
+                    <div class="card shadow-lg">
+                        <img src="https://cocotran.com/wp-content/uploads/2023/04/axp-photography-E8cgpbVJ070-unsplash-scaled.jpg"
+                            class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Mykonos<span class="badge badge-pill badge-danger">HOT</span></h5>
+                            <p class="card-text">Known for the most energetic and unique party and club venues in the
+                                world.</p>
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-xl-2 mb-5">
+                    <div class="card shadow-lg">
+                        <img style="height: 127.1px;" src="https://www.costacrociere.it/content/dam/costa/costa-magazine/article-images/what-to-see-in-rio-de-janeiro/rio-de-janeiro-panorama_YuJas-Shutterstock_1.jpg.image.1296.974.high.jpg"
+                            class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Rio de Janeiro<span class="badge badge-pill badge-danger">HOT</span>
+                            </h5>
+                            <p class="card-text">A great encounter between the human spirit and natural splendour.</p>
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-xl-2 mb-5">
+                    <div class="card shadow-lg">
+                        <img style="height: 127.1px;" src="https://www.amarehotels.com/wp-content/uploads/2017/02/malaga-nightlife.jpg"
+                            class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Malaga<span class="badge badge-pill badge-danger">HOT</span></h5>
+                            <p class="card-text">Stunning architecture, interesting museums, and unforgettable
+                                atmosphere.</p>
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="my-5 d-none d-sm-block container" id="day-offer">
+            <h3 class="text-center mb-5">Offer of the day</h3>
+            <div class="row">
+                <div class="col col-lg-8">
+                    <img class="card-img-top" src="https://siviaggia.it/wp-content/uploads/sites/2/2023/08/Valbona.jpg"
+                        alt="">
+                </div>
+                <div class="col col-lg-4">
+                    <h3>Valbona</h3>
+                    <span class="badge badge-primary">Best offer</span>
+                    <p>15.05.2024 — 31.05.2024</p>
+                    <p>Starting from 100€</p>
+                    <p>Nothing looks as wonderful as Albania's nature. It displays a picturesque landscape on both land
+                        and water.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5 container" id="last-minute">
+            <h3 class="text-center mb-5">Last minute</h3>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-2 mb-5">
+                    <div class="card shadow-lg">
+                        <img style="height: 120px;"
+                            src="https://www.amsterdam.net/it/wp-content/uploads/sites/20/haarlem-canale-spaarne-hd.jpg"
+                            alt="Haarlem">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-5">
+                    <div class="card shadow-lg">
+                        <img style="height: 120px;"
+                            src="https://www.aviontourism.com/images/1920-900-fix/072cc775-bcc2-4431-a157-f29f209b2500"
+                            alt="Lugano">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-5">
+                    <div class="card shadow-lg">
+                        <img style="height: 120px;"
+                            src="https://a.cdn-hotels.com/gdcs/production5/d817/4d2112a0-7ad6-42f6-bf0a-1b6ff787f05e.jpg?impolicy=fcrop&w=800&h=533&q=medium"
+                            alt="Saint Tropez">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-5">
+                    <div class="card shadow-lg">
+                        <img style="height: 120px;"
+                            src="https://static2-viaggi.corriereobjects.it/wp-content/uploads/2024/04/Riga-Casa-delle-Teste-Nere.jpg?v=1712065686"
+                            alt="Riga">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-5">
+                    <div class="card shadow-lg">
+                        <img style="height: 120px;"
+                            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/b5/c1/a7/water-villa-aerial.jpg?w=1200&h=-1&s=1"
+                            alt="Maldive">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-5">
+                    <div class="card shadow-lg">
+                        <img style="height: 120px;"
+                            src="https://www.classicjourneys.com/wp-content/uploads/2021/07/servletImageServer-796-1290x728.jpeg.webp"
+                            alt="Cuba">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="mb-5">
+            <h3 class="text-center">Testimonial</h3>
+            <div class="d-flex pb-5">
+                <img style="height: 60px;"
+                    src="https://static01.nyt.com/newsgraphics/2020/11/12/fake-people/4b806cf591a8a76adfc88d19e90c8c634345bf3d/fallbacks/mobile-04.jpg"
+                    alt="">
+                <div class="px-4">
+                    <h6>Hannah Waller</h6>
+                    <p>
+                        Great service. Very responsive. Our holiday ran so smoothly without any hassles and we had a
+                        fantastic time.
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex pb-5">
+                <img style="height: 60px;"
+                    src="https://static01.nyt.com/newsgraphics/2020/11/12/fake-people/4b806cf591a8a76adfc88d19e90c8c634345bf3d/fallbacks/mobile-05.jpg"
+                    alt="">
+                <div class="px-4">
+                    <h6>Avantee Chatterjee</h6>
+                    <p>
+                        I have been your customer since 2019. And every time I book with you I know I am getting the
+                        best. First my Fiji trip and now the Bali trip. I will again come back to you for another annual
+                        holiday. Thanks you
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex pb-5">
+                <img style="height: 60px;"
+                    src="https://static01.nyt.com/newsgraphics/2020/11/12/fake-people/4b806cf591a8a76adfc88d19e90c8c634345bf3d/fallbacks/mobile-07.jpg"
+                    alt="">
+                <div class="px-4">
+                    <h6>Andrew Fletcher</h6>
+                    <p>
+                        We got a transfer from the airport to our hotel and then back
+                        to the airport 11 nights later. Both cars were very clean and nice
+                        to sit in. The drivers were very lovely and spoke good English.
+                        When we got back we will definitely book with them again.
+                        Loved the service very happy with them.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid py-3 text-light" id="contactUs">
+        <button type="button" class="btn btn-outline-secondary mb-2" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Contact us
+        </button>
+        <span>© 2024 Petro Travel LTD. All Rights Reserved.</span>
+    </footer>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Contact us</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Email"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group">
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
